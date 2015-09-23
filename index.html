@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app='gere0018-multiview-list'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiview List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Essential learning points from this assignment:
+        - Routing requires a seperate angular module ngRoute to be loaded.
+        - ngRoute is used with ngView directive
+        - providers can be used only with the config functions.
+        - Tutorial link:https://docs.angularjs.org/tutorial/step_07 -->
+</head>
+
+<!-- Only the common part for all pages in the app is included in the index.html. -->
+<body>
+    <div class="masthead bg-primary">
+        <h2>Multiview List</h2>
+    </div>
+    <div class="container">
+        <ul class=" row nav nav-pills center-block">
+          <li role="presentation" class="active"><a href="#/lists/first">First</a></li>
+          <li role="presentation"><a href="#/lists/second">Second</a></li>
+          <li role="presentation"><a href="#/lists/third">Third</a></li>
+        </ul>
+    </div>
+
+<!-- ngView allows loading all the different views or pages in the app -->
+    <div ng-view></div>
+
+
+
+
+</body>
+</html>

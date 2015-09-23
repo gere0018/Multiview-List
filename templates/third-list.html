@@ -1,0 +1,12 @@
+<div class="container thirdList">
+    <h1>Third List</h1>
+    <ul class="list-group" >
+            <li class="list-group-item row" ng-model="item" ng-repeat="item in list">
+                <p class="col-xs-10">{{ item }}</p>
+                    <span ng-click= "deleteItem($index)" class="glyphicon glyphicon-trash col-xs-1" aria-hidden="true" ></span>
+
+            </li>
+
+
+        </ul>
+</div>

@@ -1,0 +1,20 @@
+/* Change the background color for lists to make the navigation distinction more visible */
+.firstList{
+    background: pink;
+
+}
+.secondList{
+    background: yellow;
+
+}
+.thirdList{
+    background: green;
+
+}
+
+/* add some padding to header and center it*/
+.masthead{
+    padding: 1rem 0;
+    text-align: center;
+}
+
